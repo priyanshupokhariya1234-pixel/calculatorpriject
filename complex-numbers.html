@@ -1,0 +1,176 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Complex Numbers - Scientific Calculator</title>
+
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+   
+    <style>
+        header {
+            background: radial-gradient(circle at top, #ffd166 0%, #ff9f1c 80%);
+            padding: 16px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.25);
+            color: #1f1f1f;
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .brand span {
+            display: inline-block;
+            background: #1f1f1f;
+            color: #fff;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 26px;
+            font-size: 14px;
+        }
+
+        header a {
+            font-weight: 500;
+            color: #1f1f1f !important;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: #0d3b66 !important;
+        }
+
+        .btn-dark {
+            background: #1f1f1f;
+            border: none;
+        }
+
+        .btn-dark:hover {
+            background: #0d3b66;
+        }
+
+       
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #fff9f2 0%, #f4f6fb 100%);
+            padding-bottom: 30px;
+        }
+
+        .content-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+            padding: 40px;
+            margin: 30px auto;
+            max-width: 900px;
+        }
+
+        .content-card h1,
+        .content-card h2 {
+            color: #0d3b66;
+            font-weight: 700;
+        }
+
+        .formula {
+            background: #f7f9fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+        }
+
+        .back-btn {
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    
+    <header>
+        <div class="container d-flex flex-wrap gap-3 justify-content-between align-items-center">
+
+            <div class="brand">
+                <span>Σ</span>
+                <strong>Scientific Calculator</strong>
+            </div>
+
+            <nav class="d-flex align-items-center flex-wrap">
+                <a href="finalcalulator.html" class="text-decoration-none me-3">Home</a>
+                <a href="banda.html" class="text-decoration-none me-3">About</a>
+                <a href="finalcalulator.html#categories" class="text-decoration-none me-3">Categories</a>
+                <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            </nav>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="finalcalulator.html" class="btn btn-outline-primary back-btn">← Back to Calculator</a>
+
+        <div class="content-card">
+            <h1>Complex Numbers</h1>
+
+           
+            <h2>Definition</h2>
+            <p>A complex number is a number that can be expressed in the form a + bi, where a and b are real numbers, and i is the imaginary unit satisfying i² = -1.</p>
+            <div class="formula">
+                <strong>Standard Form:</strong> z = a + bi<br>
+                Where: a = real part, b = imaginary part, i = √(-1)
+            </div>
+
+            <h2>The Imaginary Unit</h2>
+            <p>The imaginary unit i is defined as:</p>
+            <div class="formula">i² = -1, so i = √(-1)</div>
+
+            <h2>Representation Forms</h2>
+            <h3>Rectangular Form</h3>
+            <div class="formula">z = a + bi</div>
+
+            <h3>Polar Form</h3>
+            <div class="formula">z = r(cos θ + i sin θ) = r e^(iθ)</div>
+
+            <h2>Operations</h2>
+            <h3>Addition</h3>
+            <div class="formula">(a + bi) + (c + di) = (a + c) + (b + d)i</div>
+
+            <h3>Subtraction</h3>
+            <div class="formula">(a + bi) - (c + di) = (a - c) + (b - d)i</div>
+
+            <h3>Multiplication</h3>
+            <div class="formula">(a + bi)(c + di) = (ac - bd) + (ad + bc)i</div>
+
+            <h3>Division</h3>
+            <div class="formula">(a + bi) / (c + di) = [(a + bi)(c - di)] / (c² + d²)</div>
+
+            <h2>Complex Conjugate</h2>
+            <div class="formula">z̄ = a - bi</div>
+
+            <h2>Magnitude</h2>
+            <div class="formula">|z| = √(a² + b²)</div>
+
+            <h2>Example: Adding</h2>
+            <p>(3 + 4i) + (2 - 5i) = 5 - i</p>
+
+            <div class="mt-4">
+                <a href="finalcalulator.html" class="btn btn-primary">Back to Calculator</a>
+            </div>
+        </div>
+    </div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

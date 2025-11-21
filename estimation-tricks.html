@@ -1,0 +1,274 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Estimation Tricks - Scientific Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+       header {
+            background: radial-gradient(circle at top, #ffd166 0%, #ff9f1c 80%);
+            padding: 16px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.25);
+            color: #1f1f1f;
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .brand span {
+            display: inline-block;
+            background: #1f1f1f;
+            color: #fff;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 26px;
+            font-size: 14px;
+        }
+
+        header a {
+            font-weight: 500;
+            color: #1f1f1f !important;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: #0d3b66 !important;
+        }
+
+        .btn-dark {
+            background: #1f1f1f;
+            border: none;
+        }
+
+        .btn-dark:hover {
+            background: #0d3b66;
+        }
+
+       
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #fff9f2 0%, #f4f6fb 100%);
+            padding-bottom: 30px;
+        }
+
+        .content-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+            padding: 40px;
+            margin: 30px auto;
+            max-width: 900px;
+        }
+
+        .content-card h1,
+        .content-card h2 {
+            color: #0d3b66;
+            font-weight: 700;
+        }
+
+        .back-btn {
+            margin-top: 20px;
+        }
+
+        .formula {
+            background: #f7f9fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <div class="container d-flex flex-wrap gap-3 justify-content-between align-items-center">
+            <div class="brand">
+                <span>Σ</span>
+                <strong>Scientific Calculator</strong>
+            </div>
+            <nav class="d-flex align-items-center flex-wrap">
+                <a href="finalcalulator.html" class="text-decoration-none me-3">Home</a>
+                <a href="banda.html" class="text-decoration-none me-3">About</a>
+                <a href="finalcalulator.html#categories" class="text-decoration-none me-3">Categories</a>
+                <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <a href="finalcalulator.html" class="btn btn-outline-primary back-btn">← Back to Calculator</a>
+        <div class="content-card">
+            <h1>Estimation Tricks</h1>
+            
+            <h2>Introduction</h2>
+            <p>Estimation is the skill of quickly approximating calculations without exact computation. It's invaluable for checking calculator work, making quick decisions, and understanding if answers are reasonable.</p>
+
+            <h2>Rounding Strategies</h2>
+            <h3>Round to Nearest Convenient Number</h3>
+            <ul>
+                <li>Round to nearest 10, 100, or 1000</li>
+                <li>Example: 47 × 23 ≈ 50 × 20 = 1000</li>
+                <li>Actual: 47 × 23 = 1081 (very close!)</li>
+            </ul>
+
+            <h3>Compatible Numbers</h3>
+            <p>Use numbers that are easy to work with mentally:</p>
+            <ul>
+                <li>25 × 4 = 100</li>
+                <li>50 × 2 = 100</li>
+                <li>125 × 8 = 1000</li>
+            </ul>
+            <p><strong>Example:</strong> 24 × 48 ≈ 25 × 50 = 1250</p>
+
+            <h2>Multiplication Tricks</h2>
+            
+            <h3>Multiplying by Powers of 10</h3>
+            <ul>
+                <li>× 10: Move decimal right 1 place (or add a zero)</li>
+                <li>× 100: Move decimal right 2 places</li>
+                <li>× 1000: Move decimal right 3 places</li>
+            </ul>
+
+            <h3>Multiplying by 5</h3>
+            <p>Multiply by 10, then divide by 2</p>
+            <ul>
+                <li>47 × 5 = 47 × 10 ÷ 2 = 470 ÷ 2 = 235</li>
+            </ul>
+
+            <h3>Multiplying by 11</h3>
+            <p>For two-digit numbers: add the digits, put sum in the middle</p>
+            <ul>
+                <li>23 × 11: 2 (2+3) 3 = 253</li>
+                <li>If sum > 9, carry the 1</li>
+            </ul>
+
+            <h3>Multiplying by 9</h3>
+            <p>Multiply by 10, then subtract the number</p>
+            <ul>
+                <li>47 × 9 = 47 × 10 - 47 = 470 - 47 = 423</li>
+            </ul>
+
+            <h2>Division Tricks</h2>
+            
+            <h3>Dividing by 5</h3>
+            <p>Multiply by 2, then divide by 10</p>
+            <ul>
+                <li>47 ÷ 5 = 47 × 2 ÷ 10 = 94 ÷ 10 = 9.4</li>
+            </ul>
+
+            <h3>Dividing by 25</h3>
+            <p>Multiply by 4, then divide by 100</p>
+            <ul>
+                <li>200 ÷ 25 = 200 × 4 ÷ 100 = 800 ÷ 100 = 8</li>
+            </ul>
+
+            <h2>Percentage Estimation</h2>
+            
+            <h3>10% Rule</h3>
+            <p>10% of any number = divide by 10 (move decimal left 1 place)</p>
+            <ul>
+                <li>10% of 350 = 35</li>
+                <li>Then: 20% = 2 × 10%, 30% = 3 × 10%, etc.</li>
+            </ul>
+
+            <h3>50% Rule</h3>
+            <p>50% = divide by 2</p>
+            <ul>
+                <li>50% of 240 = 120</li>
+            </ul>
+
+            <h3>25% Rule</h3>
+            <p>25% = divide by 4 (or half of 50%)</p>
+            <ul>
+                <li>25% of 200 = 50</li>
+            </ul>
+
+            <h2>Square Number Estimation</h2>
+            <h3>Near Perfect Squares</h3>
+            <p>If you know n², estimate (n+1)²:</p>
+            <ul>
+                <li>30² = 900</li>
+                <li>31² ≈ 900 + 30 + 31 = 961 (actual: 961)</li>
+            </ul>
+
+            <h3>Ending in 5</h3>
+            <p>For numbers ending in 5:</p>
+            <ul>
+                <li>25²: 2 × 3 = 6, then add 25 → 625</li>
+                <li>35²: 3 × 4 = 12, then add 25 → 1225</li>
+            </ul>
+
+            <h2>Fraction Estimation</h2>
+            <h3>Comparing Fractions</h3>
+            <p>Cross-multiply to compare:</p>
+            <ul>
+                <li>Is 3/7 or 4/9 larger?</li>
+                <li>3 × 9 = 27, 4 × 7 = 28</li>
+                <li>Since 28 > 27, 4/9 is larger</li>
+            </ul>
+
+            <h2>Order of Magnitude</h2>
+            <p>Quickly estimate the scale:</p>
+            <ul>
+                <li>Is the answer in hundreds, thousands, or millions?</li>
+                <li>Example: 47 × 23 is definitely in the thousands (not hundreds or tens of thousands)</li>
+            </ul>
+
+            <h2>Error Checking</h2>
+            <p>Use estimation to catch calculator mistakes:</p>
+            <ul>
+                <li>If calculator says 47 × 23 = 47, you know it's wrong (should be ~1000)</li>
+                <li>If calculator says 47 × 23 = 10,810, you know it's wrong (should be ~1000)</li>
+            </ul>
+
+            <h2>Real-World Applications</h2>
+            <ul>
+                <li><strong>Shopping:</strong> Estimate total cost before checkout</li>
+                <li><strong>Cooking:</strong> Adjust recipe quantities</li>
+                <li><strong>Travel:</strong> Estimate time and distance</li>
+                <li><strong>Budgeting:</strong> Quick financial calculations</li>
+                <li><strong>Science:</strong> Check if experimental results are reasonable</li>
+            </ul>
+
+            <h2>Tips for Better Estimation</h2>
+            <ul>
+                <li>Round numbers to make calculations easier</li>
+                <li>Use compatible numbers (numbers that work well together)</li>
+                <li>Estimate before calculating exactly</li>
+                <li>Check if your estimate makes sense</li>
+                <li>Practice mental math regularly</li>
+                <li>Learn common number patterns (squares, cubes, etc.)</li>
+            </ul>
+
+            <h2>Example: Shopping Estimate</h2>
+            <p>Items: $12.99, $8.50, $24.75, $5.25</p>
+            <ul>
+                <li>Round: $13 + $9 + $25 + $5 = $52</li>
+                <li>Actual: $51.49 (very close!)</li>
+            </ul>
+
+            <h2>Example: Tip Calculation</h2>
+            <p>Bill: $47.80, want to tip 20%</p>
+            <ul>
+                <li>10% = $4.78 ≈ $5</li>
+                <li>20% = 2 × $5 = $10</li>
+                <li>Actual: $9.56 (close enough for estimation!)</li>
+            </ul>
+
+            <div class="mt-4">
+                <a href="finalcalulator.html" class="btn btn-primary">Back to Calculator</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

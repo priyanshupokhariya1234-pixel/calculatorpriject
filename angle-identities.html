@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Angle Identities - Scientific Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+       header {
+            background: radial-gradient(circle at top, #ffd166 0%, #ff9f1c 80%);
+            padding: 16px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.25);
+            color: #1f1f1f;
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .brand span {
+            display: inline-block;
+            background: #1f1f1f;
+            color: #fff;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 26px;
+            font-size: 14px;
+        }
+
+        header a {
+            font-weight: 500;
+            color: #1f1f1f !important;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: #0d3b66 !important;
+        }
+
+        .btn-dark {
+            background: #1f1f1f;
+            border: none;
+        }
+
+        .btn-dark:hover {
+            background: #0d3b66;
+        }
+
+       
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #fff9f2 0%, #f4f6fb 100%);
+            padding-bottom: 30px;
+        }
+
+        .content-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+            padding: 40px;
+            margin: 30px auto;
+            max-width: 900px;
+        }
+
+        .content-card h1,
+        .content-card h2 {
+            color: #0d3b66;
+            font-weight: 700;
+        }
+
+        .back-btn {
+            margin-top: 20px;
+        }
+
+        .formula {
+            background: #f7f9fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <div class="container d-flex flex-wrap gap-3 justify-content-between align-items-center">
+            <div class="brand">
+                <span>Σ</span>
+                <strong>Scientific Calculator</strong>
+            </div>
+            <nav class="d-flex align-items-center flex-wrap">
+                <a href="finalcalulator.html" class="text-decoration-none me-3">Home</a>
+                <a href="banda.html" class="text-decoration-none me-3">About</a>
+                <a href="finalcalulator.html#categories" class="text-decoration-none me-3">Categories</a>
+                <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <a href="finalcalulator.html" class="btn btn-outline-primary back-btn">← Back to Calculator</a>
+        <div class="content-card">
+            <h1>Angle Identities</h1>
+            
+            <h2>Introduction</h2>
+            <p>Angle identities are formulas that allow you to break down complex trigonometric expressions into simpler ones. They are essential tools for solving trigonometric equations and simplifying calculations.</p>
+
+            <h2>Addition and Subtraction Formulas</h2>
+            <p>These formulas help you find trigonometric values for sums and differences of angles:</p>
+            
+            <div class="formula">
+                <strong>Sine Addition:</strong> sin(α + β) = sin α cos β + cos α sin β<br>
+                <strong>Sine Subtraction:</strong> sin(α - β) = sin α cos β - cos α sin β
+            </div>
+
+            <div class="formula">
+                <strong>Cosine Addition:</strong> cos(α + β) = cos α cos β - sin α sin β<br>
+                <strong>Cosine Subtraction:</strong> cos(α - β) = cos α cos β + sin α sin β
+            </div>
+
+            <div class="formula">
+                <strong>Tangent Addition:</strong> tan(α + β) = (tan α + tan β) / (1 - tan α tan β)<br>
+                <strong>Tangent Subtraction:</strong> tan(α - β) = (tan α - tan β) / (1 + tan α tan β)
+            </div>
+
+            <h2>Double Angle Formulas</h2>
+            <p>These express trigonometric functions of 2θ in terms of θ:</p>
+            
+            <div class="formula">
+                sin(2θ) = 2 sin θ cos θ
+            </div>
+
+            <div class="formula">
+                cos(2θ) = cos²θ - sin²θ = 2cos²θ - 1 = 1 - 2sin²θ
+            </div>
+
+            <div class="formula">
+                tan(2θ) = 2tan θ / (1 - tan²θ)
+            </div>
+
+            <h2>Half Angle Formulas</h2>
+            <p>These express trigonometric functions of θ/2 in terms of θ:</p>
+            
+            <div class="formula">
+                sin(θ/2) = ±√[(1 - cos θ) / 2]
+            </div>
+
+            <div class="formula">
+                cos(θ/2) = ±√[(1 + cos θ) / 2]
+            </div>
+
+            <div class="formula">
+                tan(θ/2) = sin θ / (1 + cos θ) = (1 - cos θ) / sin θ
+            </div>
+
+            <h2>Sum to Product Formulas</h2>
+            <p>Convert sums of trigonometric functions into products:</p>
+            
+            <div class="formula">
+                sin α + sin β = 2 sin[(α + β)/2] cos[(α - β)/2]<br>
+                sin α - sin β = 2 cos[(α + β)/2] sin[(α - β)/2]
+            </div>
+
+            <div class="formula">
+                cos α + cos β = 2 cos[(α + β)/2] cos[(α - β)/2]<br>
+                cos α - cos β = -2 sin[(α + β)/2] sin[(α - β)/2]
+            </div>
+
+            <h2>Product to Sum Formulas</h2>
+            <p>Convert products of trigonometric functions into sums:</p>
+            
+            <div class="formula">
+                sin α sin β = ½[cos(α - β) - cos(α + β)]<br>
+                cos α cos β = ½[cos(α - β) + cos(α + β)]<br>
+                sin α cos β = ½[sin(α + β) + sin(α - β)]
+            </div>
+
+            <h2>Applications</h2>
+            <ul>
+                <li><strong>Engineering:</strong> Solving phase problems in electrical engineering</li>
+                <li><strong>Physics:</strong> Analyzing wave interference and superposition</li>
+                <li><strong>Calculus:</strong> Simplifying integrals and derivatives</li>
+                <li><strong>Signal Processing:</strong> Breaking down complex waveforms</li>
+            </ul>
+
+            <h2>Example: Using Addition Formula</h2>
+            <p>Find sin(75°) using the addition formula:</p>
+            <ul>
+                <li>sin(75°) = sin(45° + 30°)</li>
+                <li>= sin(45°)cos(30°) + cos(45°)sin(30°)</li>
+                <li>= (√2/2)(√3/2) + (√2/2)(1/2)</li>
+                <li>= (√6 + √2) / 4</li>
+            </ul>
+
+            <h2>Tips for Using Identities</h2>
+            <ul>
+                <li>Always check which form of an identity is most useful for your problem</li>
+                <li>Remember the signs: addition formulas have different signs for sine and cosine</li>
+                <li>Use double angle formulas when you need to simplify expressions with 2θ</li>
+                <li>Half angle formulas are useful when working with angles like 15°, 22.5°, etc.</li>
+            </ul>
+
+            <div class="mt-4">
+                <a href="finalcalulator.html" class="btn btn-primary">Back to Calculator</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

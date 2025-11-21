@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About - Scientific Calculator</title>
+
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+     
+        header {
+            background: radial-gradient(circle at top, #ffd166 0%, #ff9f1c 80%);
+            padding: 16px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.25);
+            color: #1f1f1f;
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .brand span {
+            display: inline-block;
+            background: #1f1f1f;
+            color: #fff;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 26px;
+            font-size: 14px;
+        }
+
+        header a {
+            font-weight: 500;
+            color: #1f1f1f !important;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: #0d3b66 !important;
+        }
+
+        .btn-dark {
+            background: #1f1f1f;
+            border: none;
+        }
+
+        .btn-dark:hover {
+            background: #0d3b66;
+        }
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #fff9f2 0%, #f4f6fb 100%);
+            margin: 0;
+        }
+
+        .about-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .about-card {
+            background: #fff;
+            border: 1px solid #e0d9cf;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+            margin-bottom: 20px;
+        }
+
+        .about-card h2 {
+            color: palevioletred;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ffeb99;
+            padding-bottom: 10px;
+        }
+
+        .about-card p {
+            margin-bottom: 15px;
+        }
+
+        .tech-list {
+            margin-top: 15px;
+        }
+
+        .tech-list strong {
+            display: inline-block;
+            background: #ffeb99;
+            padding: 6px 12px;
+            border-radius: 15px;
+            margin: 5px 5px 5px 0;
+            font-size: 14px;
+        }
+
+        .btn-back {
+            background: palevioletred;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn-back:hover {
+            background: #c9708a;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        footer {
+            background: #403434;
+            color: #fff;
+            padding: 18px 0;
+            margin-top: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+  
+    <header>
+        <div class="container d-flex flex-wrap gap-3 justify-content-between align-items-center">
+            <div class="brand">
+                <span>Σ</span>
+                <strong>Scientific Calculator</strong>
+            </div>
+            <nav class="d-flex align-items-center flex-wrap">
+                <a href="finalcalulator.html" class="text-decoration-none me-3">Home</a>
+                <a href="banda.html" class="text-decoration-none me-3">About</a>
+                <a href="finalcalulator.html#categories" class="text-decoration-none me-3">Categories</a>
+                <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="about-container">
+            <div class="about-card">
+                <h2>About Our Calculator</h2>
+                <p>
+                    This is a simple scientific calculator built with HTML and CSS. It helps you perform basic math operations, trigonometry functions, and more. The calculator is easy to use and works on all devices.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h2>How We Made It</h2>
+                <p>
+                    We built this calculator using basic web technologies:
+                </p>
+                <div class="tech-list">
+                    <strong>HTML</strong>
+                    <strong>CSS</strong>
+                    <strong>Bootstrap</strong>
+                    <strong>Responsive Design</strong>
+                </div>
+
+                <p style="margin-top: 20px;">
+                    <strong>Step 1: HTML Structure</strong><br>
+                    We started by creating the HTML structure with semantic elements. The page includes a header with navigation, a carousel section showcasing famous mathematicians, a categories section with accordion-style collapsible items, and the main calculator interface. Each section was carefully organized to ensure proper document structure.
+                </p>
+
+                <p>
+                    <strong>Step 2: Styling with CSS</strong><br>
+                    We used custom CSS to style the entire calculator. The color scheme uses warm colors like #ffb700 (gold) for the header and palevioletred for accents. We created a clean, modern look with rounded corners, shadows, and smooth transitions. The calculator buttons were styled with different colors to distinguish between number buttons, operation buttons, and function buttons.
+                </p>
+
+                <p>
+                    <strong>Step 3: Bootstrap Integration</strong><br>
+                    We integrated Bootstrap 5.3 to add responsive components like the carousel for displaying scientist images, accordion for the categories section, and modal for the login form. Bootstrap helped us create a professional-looking interface quickly while ensuring cross-browser compatibility.
+                </p>
+
+                <p>
+                    <strong>Step 4: Layout Design</strong><br>
+                    One of the key features is the side-by-side layout of categories and calculator. We used CSS Flexbox to create this layout. The categories section takes up flexible space (flex: 1) while the calculator maintains its fixed width. This makes efficient use of screen space on larger devices.
+                </p>
+
+                <p>
+                    <strong>Step 5: Responsive Design</strong><br>
+                    We made sure the calculator works perfectly on all devices. Using CSS media queries, we adjusted the layout for different screen sizes. On screens smaller than 992px, the categories and calculator stack vertically instead of side by side. Button sizes and font sizes also adjust for mobile devices to ensure usability.
+                </p>
+
+                <p>
+                    <strong>Step 6: Calculator Grid</strong><br>
+                    The calculator buttons are arranged in a CSS Grid layout with 4 columns. This creates a clean, organized button layout. Each button is properly sized and spaced using grid properties, making the calculator easy to use and visually appealing.
+                </p>
+            </div>
+
+            <div class="text-center">
+                <a href="finalcalulator.html" class="btn-back">← Back to Calculator</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>HTML Project</p>
+    </footer>
+
+   
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-3">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <label class="form-label">Username</label>
+                    <input type="text" class="form-control mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Login</button>
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

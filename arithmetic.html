@@ -1,0 +1,246 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Arithmetic - Scientific Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+       header {
+            background: radial-gradient(circle at top, #ffd166 0%, #ff9f1c 80%);
+            padding: 16px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.25);
+            color: #1f1f1f;
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .brand span {
+            display: inline-block;
+            background: #1f1f1f;
+            color: #fff;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 26px;
+            font-size: 14px;
+        }
+
+        header a {
+            font-weight: 500;
+            color: #1f1f1f !important;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: #0d3b66 !important;
+        }
+
+        .btn-dark {
+            background: #1f1f1f;
+            border: none;
+        }
+
+        .btn-dark:hover {
+            background: #0d3b66;
+        }
+
+       
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #fff9f2 0%, #f4f6fb 100%);
+            padding-bottom: 30px;
+        }
+
+        .content-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+            padding: 40px;
+            margin: 30px auto;
+            max-width: 900px;
+        }
+
+        .content-card h1,
+        .content-card h2 {
+            color: #0d3b66;
+            font-weight: 700;
+        }
+
+        .back-btn {
+            margin-top: 20px;
+        }
+
+        .formula {
+            background: #f7f9fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <div class="container d-flex flex-wrap gap-3 justify-content-between align-items-center">
+            <div class="brand">
+                <span>Σ</span>
+                <strong>Scientific Calculator</strong>
+            </div>
+            <nav class="d-flex align-items-center flex-wrap">
+                <a href="finalcalulator.html" class="text-decoration-none me-3">Home</a>
+                <a href="banda.html" class="text-decoration-none me-3">About</a>
+                <a href="finalcalulator.html#categories" class="text-decoration-none me-3">Categories</a>
+                <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <a href="finalcalulator.html" class="btn btn-outline-primary back-btn">← Back to Calculator</a>
+        <div class="content-card">
+            <h1>Arithmetic</h1>
+            
+            <h2>Introduction</h2>
+            <p>Arithmetic is the branch of mathematics dealing with basic operations: addition, subtraction, multiplication, and division. It forms the foundation for all higher mathematics.</p>
+
+            <h2>Basic Operations</h2>
+            
+            <h3>Addition (+)</h3>
+            <p>Combining two or more numbers to get a sum.</p>
+            <div class="formula">a + b = c</div>
+            <p><strong>Properties:</strong></p>
+            <ul>
+                <li>Commutative: a + b = b + a</li>
+                <li>Associative: (a + b) + c = a + (b + c)</li>
+                <li>Identity: a + 0 = a</li>
+            </ul>
+
+            <h3>Subtraction (-)</h3>
+            <p>Finding the difference between two numbers.</p>
+            <div class="formula">a - b = c</div>
+            <p>Note: Subtraction is not commutative (a - b ≠ b - a)</p>
+
+            <h3>Multiplication (×)</h3>
+            <p>Repeated addition or scaling.</p>
+            <div class="formula">a × b = c</div>
+            <p><strong>Properties:</strong></p>
+            <ul>
+                <li>Commutative: a × b = b × a</li>
+                <li>Associative: (a × b) × c = a × (b × c)</li>
+                <li>Distributive: a × (b + c) = a × b + a × c</li>
+                <li>Identity: a × 1 = a</li>
+                <li>Zero: a × 0 = 0</li>
+            </ul>
+
+            <h3>Division (÷)</h3>
+            <p>Splitting into equal parts or finding how many times one number fits into another.</p>
+            <div class="formula">a ÷ b = c (where b ≠ 0)</div>
+            <p><strong>Important:</strong> Division by zero is undefined!</p>
+
+            <h2>Order of Operations (PEMDAS)</h2>
+            <p>To ensure consistent results, follow this order:</p>
+            <ol>
+                <li><strong>P</strong>arentheses (and brackets, braces)</li>
+                <li><strong>E</strong>xponents (powers and roots)</li>
+                <li><strong>M</strong>ultiplication and <strong>D</strong>ivision (left to right)</li>
+                <li><strong>A</strong>ddition and <strong>S</strong>ubtraction (left to right)</li>
+            </ol>
+
+            <h3>Example</h3>
+            <p>Calculate: 3 + 4 × 2² - (6 ÷ 2)</p>
+            <ul>
+                <li>Parentheses: 6 ÷ 2 = 3</li>
+                <li>Exponents: 2² = 4</li>
+                <li>Multiplication: 4 × 4 = 16</li>
+                <li>Addition/Subtraction: 3 + 16 - 3 = 16</li>
+            </ul>
+
+            <h2>Working with Decimals</h2>
+            <h3>Addition and Subtraction</h3>
+            <p>Line up decimal points vertically, then add or subtract as usual.</p>
+            <p><strong>Example:</strong> 12.34 + 5.678</p>
+            <ul>
+                <li>Line up: 12.340 + 5.678 = 18.018</li>
+            </ul>
+
+            <h3>Multiplication</h3>
+            <p>Multiply as whole numbers, then count total decimal places in both numbers.</p>
+            <p><strong>Example:</strong> 2.5 × 0.3</p>
+            <ul>
+                <li>25 × 3 = 75</li>
+                <li>Total decimal places: 1 + 1 = 2</li>
+                <li>Answer: 0.75</li>
+            </ul>
+
+            <h3>Division</h3>
+            <p>Move decimal point in divisor to make it whole, move same places in dividend, then divide.</p>
+
+            <h2>Working with Fractions</h2>
+            
+            <h3>Adding/Subtracting Fractions</h3>
+            <p>Find common denominator, then add/subtract numerators.</p>
+            <div class="formula">a/b + c/d = (ad + bc) / bd</div>
+
+            <h3>Multiplying Fractions</h3>
+            <div class="formula">(a/b) × (c/d) = (a × c) / (b × d)</div>
+            <p>Multiply numerators and denominators separately.</p>
+
+            <h3>Dividing Fractions</h3>
+            <div class="formula">(a/b) ÷ (c/d) = (a/b) × (d/c) = (a × d) / (b × c)</div>
+            <p>Multiply by the reciprocal (flip the second fraction).</p>
+
+            <h2>Percentages</h2>
+            <p>Percent means "per hundred".</p>
+            <div class="formula">
+                Percentage = (Part / Whole) × 100%<br>
+                Part = (Percentage / 100) × Whole
+            </div>
+            <p><strong>Example:</strong> What is 25% of 80?</p>
+            <ul>
+                <li>Part = (25/100) × 80 = 0.25 × 80 = 20</li>
+            </ul>
+
+            <h2>Tips for Accuracy</h2>
+            <ul>
+                <li>Always follow PEMDAS order of operations</li>
+                <li>Check your work by doing operations in reverse</li>
+                <li>Group decimals together when adding/subtracting</li>
+                <li>Estimate first to catch obvious errors</li>
+                <li>Double-check decimal point placement</li>
+                <li>Break long calculations into smaller steps</li>
+            </ul>
+
+            <h2>Common Mistakes to Avoid</h2>
+            <ul>
+                <li>Forgetting order of operations</li>
+                <li>Misplacing decimal points</li>
+                <li>Dividing by zero</li>
+                <li>Not finding common denominators for fractions</li>
+                <li>Forgetting to carry or borrow in addition/subtraction</li>
+            </ul>
+
+            <h2>Mental Math Tricks</h2>
+            <ul>
+                <li><strong>Multiplying by 10:</strong> Add a zero (or move decimal right)</li>
+                <li><strong>Multiplying by 5:</strong> Multiply by 10, then divide by 2</li>
+                <li><strong>Multiplying by 11:</strong> For two-digit numbers, add digits and put sum in middle</li>
+                <li><strong>Percentages:</strong> 10% = divide by 10, 50% = divide by 2</li>
+            </ul>
+
+            <div class="mt-4">
+                <a href="finalcalulator.html" class="btn btn-primary">Back to Calculator</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

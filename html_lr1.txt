@@ -1,0 +1,115 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+<title>News Article</title>
+
+<style>
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #d49db8;
+    margin: 0;
+    padding: 30px;
+  }
+
+  article 
+  {
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 950px;
+    margin: auto;
+    flex-direction: row;
+  }
+
+  section  
+  {
+    flex: 2;
+    padding: 25px;
+    background-color: #fffafc;
+  }
+
+  section h1 
+  {
+    color: #d63384;
+    font-size: 28px;
+    margin-bottom:5px;
+  }
+
+  section h2 
+  {
+    color: #7b2cbf;
+    font-size: 18px;
+    margin-top:0;
+  }
+
+  section p 
+  {
+    color: #333;
+    line-height: 1.6;
+  }
+
+  section img 
+  {
+    width: 100%;
+    border-radius: 15px;
+    margin: 15px 0;
+    height: auto;
+  }
+
+  aside {
+    flex: 1;
+    background-color: #ffe1f0;
+    padding: 25px;
+    border-left: 5px solid #ff8fab;
+    text-align: center;
+  }
+
+  aside h3 {
+    color: #c9184a;
+    text-decoration: underline;
+  }
+
+  aside img {
+    width: 220px;
+    height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin: 10px 0;
+  }
+
+  aside p  {
+    color: #4a4a4a;
+  }
+.author-name
+{ 
+    color: #c9184a;
+    font-weight: bold;
+    font-size: 30px;
+}
+  
+</style>
+</head>
+
+<body>
+
+<article>
+  <section>
+    <h1>Cute News Article </h1>
+    <h2>A Heartwarming Story</h2>
+    <img src="cheery.jpg" alt="Morning scene">
+    <p>Morning time is the most peaceful part of the day. A little sunshine, a warm cup of tea, and a smile can make everything feel softer and happier.</p>
+    <p>Colors bring calmness and positivity. Pastel tones make the mind fresh and bright. Even a small decoration can change your mood!</p>
+    <p>Enjoy every tiny moment — they all make your life more beautiful and meaningful. </p>
+  </section>
+
+  <aside>
+    <h3>About the Author</h3>
+    <img src="html founder.jpg" alt="Author photo">
+    <p><b class="author-name">Tim berners lee</b><br>Invented the World Wide Web (WWW) in 1989, creating the first web browser.</p>
+
+  </aside>
+</article>
+
+</body>
+</html>

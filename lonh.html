@@ -1,0 +1,108 @@
+<html>
+<head>
+  <title>Scientific Calculator</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background: #a3d8dd;
+    }
+
+    h1 {
+      background: palevioletred;
+      color: white;
+      padding: 10px;
+    }
+
+    .calculator {
+      display: inline-block;
+      background: hsl(0, 8%, 97%);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #fdfafa;
+      margin-top: 50px;
+    }
+
+    input {
+      width: 220px;
+      height: 40px;
+      font-size: 20px;
+      margin-bottom: 10px;
+      text-align: right;
+      padding-right: 10px;
+      border: 1px solid palevioletred;
+      border-radius: 5px;
+    }
+    a.btn {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #f5eeee;
+      color:palevioletred;
+      width: 50px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 5px;
+      margin: 5px;
+      font-size: 18px;
+      border: 1px solid #bbb;
+      transition: all 0.2s;
+    }
+    a.btn:hover {
+      background-color: #ddd;
+    }
+    a.btn:active {
+      background-color: rgb(222, 76, 125);
+      color: white;
+    }
+    a.equal {
+      width: 110px;
+    }
+    .row {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Scientific Calculator</h1>
+
+  <div class="calculator">
+    <input type="text" id="display" placeholder="0" disabled><br>
+    <div class="row">
+      <a href="c.html" class="btn">C</a>
+      <a href="type1.html" class="btn">/</a>
+      <a href="#" class="btn">*</a>
+      <a href="#" class="btn">-</a>
+    </div>
+
+    <div class="row">
+      <a href="#" class="btn">7</a>
+      <a href="#" class="btn">8</a>
+      <a href="#" class="btn">9</a>
+      <a href="#" class="btn">+</a>
+    </div>
+
+    <div class="row">
+      <a href="#" class="btn">4</a>
+      <a href="#" class="btn">5</a>
+      <a href="#" class="btn">6</a>
+      <a href="#" class="btn equal">=</a>
+    </div>
+
+    
+    <div class="row">
+      <a href="#" class="btn">1</a>
+      <a href="#" class="btn">2</a>
+      <a href="#" class="btn">3</a>
+      <a href="#" class="btn">0</a>
+    </div>
+
+    
+    <div class="row">
+      <a href="#" class="btn">sin</a>
+      <a href="#" class="btn">cos</a>
+      <a href="#" class="btn">tan</a>
+    </div>
+  </div>
+
+</body>
+</html>

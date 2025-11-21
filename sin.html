@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sine (sin θ) - Scientific Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        header {
+            background: radial-gradient(circle at top, #ffd166 0%, #ff9f1c 80%);
+            padding: 16px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.25);
+            color: #1f1f1f;
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .brand span {
+            display: inline-block;
+            background: #1f1f1f;
+            color: #fff;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 26px;
+            font-size: 14px;
+        }
+
+        header a {
+            font-weight: 500;
+            color: #1f1f1f !important;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: #0d3b66 !important;
+        }
+
+        .btn-dark {
+            background: #1f1f1f;
+            border: none;
+        }
+
+        .btn-dark:hover {
+            background: #0d3b66;
+        }
+
+       
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #fff9f2 0%, #f4f6fb 100%);
+            padding-bottom: 30px;
+        }
+
+        .content-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+            padding: 40px;
+            margin: 30px auto;
+            max-width: 900px;
+        }
+
+        .content-card h1,
+        .content-card h2 {
+            color: #0d3b66;
+            font-weight: 700;
+        }
+
+        .back-btn {
+            margin-top: 20px;
+        }
+
+        .formula {
+            background: #f7f9fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <div class="container d-flex flex-wrap gap-3 justify-content-between align-items-center">
+            <div class="brand">
+                <span>Σ</span>
+                <strong>Scientific Calculator</strong>
+            </div>
+            <nav class="d-flex align-items-center flex-wrap">
+                <a href="finalcalulator.html" class="text-decoration-none me-3">Home</a>
+                <a href="banda.html" class="text-decoration-none me-3">About</a>
+                <a href="finalcalulator.html#categories" class="text-decoration-none me-3">Categories</a>
+                <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <a href="finalcalulator.html" class="btn btn-outline-primary back-btn">← Back to Calculator</a>
+        <div class="content-card">
+            <h1>Sine (sin θ)</h1>
+            
+            <h2>Definition</h2>
+            <p>The sine function is one of the fundamental trigonometric functions. In a right triangle, sine of an angle θ is defined as the ratio of the length of the side opposite to the angle to the length of the hypotenuse.</p>
+            <p><strong>Formula:</strong> sin θ = opposite / hypotenuse</p>
+
+            <h2>Understanding Sine</h2>
+            <p>Sine represents the vertical component of a point on a unit circle. When you have a right triangle:</p>
+            <ul>
+                <li>The <strong>opposite side</strong> is the side directly across from angle θ</li>
+                <li>The <strong>hypotenuse</strong> is the longest side, opposite the right angle</li>
+                <li>sin θ gives you the ratio between these two sides</li>
+            </ul>
+
+            <h2>Key Properties</h2>
+            <ul>
+                <li><strong>Range:</strong> sin θ ranges from -1 to 1</li>
+                <li><strong>Maximum:</strong> sin θ = 1 when θ = 90° (or π/2 radians) + 360°k</li>
+                <li><strong>Minimum:</strong> sin θ = -1 when θ = 270° (or 3π/2 radians) + 360°k</li>
+                <li><strong>Zero points:</strong> sin θ = 0 when θ = 0°, 180°, 360°, etc. (or 0, π, 2π radians)</li>
+                <li><strong>Period:</strong> The sine function repeats every 360° (or 2π radians)</li>
+            </ul>
+
+            <h2>Applications</h2>
+            <ul>
+                <li><strong>Wave Motion:</strong> Sine waves model oscillations, sound waves, and light waves</li>
+                <li><strong>Physics:</strong> Used in simple harmonic motion, alternating current (AC) circuits</li>
+                <li><strong>Engineering:</strong> Signal processing, vibration analysis</li>
+                <li><strong>Navigation:</strong> Calculating heights and distances</li>
+            </ul>
+
+            <h2>Graph Characteristics</h2>
+            <p>The sine graph is a smooth, continuous wave that:</p>
+            <ul>
+                <li>Starts at (0, 0)</li>
+                <li>Rises to maximum at 90°</li>
+                <li>Returns to zero at 180°</li>
+                <li>Drops to minimum at 270°</li>
+                <li>Completes the cycle at 360°</li>
+            </ul>
+
+            <h2>Important Identities</h2>
+            <ul>
+                <li>sin²θ + cos²θ = 1 (Pythagorean identity)</li>
+                <li>sin(-θ) = -sin θ (odd function)</li>
+                <li>sin(90° - θ) = cos θ</li>
+                <li>sin(θ + 360°) = sin θ (periodic)</li>
+            </ul>
+
+            <h2>Example</h2>
+            <p>In a right triangle with angle θ = 30°:</p>
+            <ul>
+                <li>If the opposite side = 5 units and hypotenuse = 10 units</li>
+                <li>Then sin(30°) = 5/10 = 0.5</li>
+                <li>This is a standard value: sin(30°) = 1/2</li>
+            </ul>
+
+            <div class="mt-4">
+                <a href="finalcalulator.html" class="btn btn-primary">Back to Calculator</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

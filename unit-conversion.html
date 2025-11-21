@@ -1,0 +1,253 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Unit Conversion - Scientific Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+       header {
+            background: radial-gradient(circle at top, #ffd166 0%, #ff9f1c 80%);
+            padding: 16px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.25);
+            color: #1f1f1f;
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .brand span {
+            display: inline-block;
+            background: #1f1f1f;
+            color: #fff;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 26px;
+            font-size: 14px;
+        }
+
+        header a {
+            font-weight: 500;
+            color: #1f1f1f !important;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: #0d3b66 !important;
+        }
+
+        .btn-dark {
+            background: #1f1f1f;
+            border: none;
+        }
+
+        .btn-dark:hover {
+            background: #0d3b66;
+        }
+
+       
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #fff9f2 0%, #f4f6fb 100%);
+            padding-bottom: 30px;
+        }
+
+        .content-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+            padding: 40px;
+            margin: 30px auto;
+            max-width: 900px;
+        }
+
+        .content-card h1,
+        .content-card h2 {
+            color: #0d3b66;
+            font-weight: 700;
+        }
+
+        .back-btn {
+            margin-top: 20px;
+        }
+
+        .formula {
+            background: #f7f9fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container d-flex flex-wrap gap-3 justify-content-between align-items-center">
+            <div class="brand">
+                <span>Σ</span>
+                <strong>Scientific Calculator</strong>
+            </div>
+            <nav class="d-flex align-items-center flex-wrap">
+                <a href="finalcalulator.html" class="text-decoration-none me-3">Home</a>
+                <a href="banda.html" class="text-decoration-none me-3">About</a>
+                <a href="finalcalulator.html#categories" class="text-decoration-none me-3">Categories</a>
+                <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <a href="calculator.html" class="btn btn-outline-primary back-btn">← Back to Calculator</a>
+        <div class="content-card">
+            <h1>Unit Conversion</h1>
+            
+            <h2>Introduction</h2>
+            <p>Unit conversion is the process of converting a measurement from one unit to another. This is essential in science, engineering, and everyday life when working with different measurement systems.</p>
+
+            <h2>The Unity Fraction Method</h2>
+            <p>The best way to convert units is using "unity fractions" - fractions that equal 1, allowing you to multiply without changing the actual value.</p>
+            <div class="formula">
+                Value in new unit = Value in old unit × (Conversion factor)
+            </div>
+            <p><strong>Key principle:</strong> Multiply by fractions that equal 1, canceling out unwanted units.</p>
+
+            <h2>Length Conversions</h2>
+            <h3>Metric System</h3>
+            <ul>
+                <li>1 kilometer (km) = 1000 meters (m)</li>
+                <li>1 meter (m) = 100 centimeters (cm)</li>
+                <li>1 centimeter (cm) = 10 millimeters (mm)</li>
+            </ul>
+
+            <h3>Imperial System</h3>
+            <ul>
+                <li>1 mile = 5280 feet</li>
+                <li>1 yard = 3 feet</li>
+                <li>1 foot = 12 inches</li>
+            </ul>
+
+            <h3>Metric to Imperial</h3>
+            <ul>
+                <li>1 meter ≈ 3.281 feet</li>
+                <li>1 kilometer ≈ 0.621 miles</li>
+                <li>1 inch = 2.54 centimeters</li>
+            </ul>
+
+            <h2>Mass/Weight Conversions</h2>
+            <h3>Metric System</h3>
+            <ul>
+                <li>1 kilogram (kg) = 1000 grams (g)</li>
+                <li>1 gram (g) = 1000 milligrams (mg)</li>
+                <li>1 metric ton = 1000 kilograms</li>
+            </ul>
+
+            <h3>Imperial System</h3>
+            <ul>
+                <li>1 ton = 2000 pounds</li>
+                <li>1 pound (lb) = 16 ounces (oz)</li>
+            </ul>
+
+            <h3>Metric to Imperial</h3>
+            <ul>
+                <li>1 kilogram ≈ 2.205 pounds</li>
+                <li>1 pound ≈ 0.454 kilograms</li>
+            </ul>
+
+            <h2>Volume Conversions</h2>
+            <h3>Metric System</h3>
+            <ul>
+                <li>1 liter (L) = 1000 milliliters (mL)</li>
+                <li>1 cubic meter (m³) = 1000 liters</li>
+            </ul>
+
+            <h3>Imperial System</h3>
+            <ul>
+                <li>1 gallon = 4 quarts</li>
+                <li>1 quart = 2 pints</li>
+                <li>1 pint = 2 cups</li>
+            </ul>
+
+            <h3>Metric to Imperial</h3>
+            <ul>
+                <li>1 liter ≈ 0.264 gallons</li>
+                <li>1 gallon ≈ 3.785 liters</li>
+            </ul>
+
+            <h2>Temperature Conversions</h2>
+            <h3>Celsius to Fahrenheit</h3>
+            <div class="formula">°F = (°C × 9/5) + 32</div>
+
+            <h3>Fahrenheit to Celsius</h3>
+            <div class="formula">°C = (°F - 32) × 5/9</div>
+
+            <h3>Celsius to Kelvin</h3>
+            <div class="formula">K = °C + 273.15</div>
+
+            <h2>Time Conversions</h2>
+            <ul>
+                <li>1 minute = 60 seconds</li>
+                <li>1 hour = 60 minutes = 3600 seconds</li>
+                <li>1 day = 24 hours</li>
+                <li>1 week = 7 days</li>
+                <li>1 year = 365 days (or 366 in leap years)</li>
+            </ul>
+
+            <h2>Example: Converting Length</h2>
+            <p><strong>Problem:</strong> Convert 5 kilometers to miles</p>
+            <p><strong>Solution:</strong></p>
+            <ul>
+                <li>1 km ≈ 0.621 miles</li>
+                <li>5 km × (0.621 miles / 1 km) = 3.105 miles</li>
+                <li>Note: The "km" units cancel out, leaving miles</li>
+            </ul>
+
+            <h2>Example: Converting Temperature</h2>
+            <p><strong>Problem:</strong> Convert 25°C to Fahrenheit</p>
+            <p><strong>Solution:</strong></p>
+            <ul>
+                <li>°F = (25 × 9/5) + 32</li>
+                <li>°F = 45 + 32 = 77°F</li>
+            </ul>
+
+            <h2>Dimensional Analysis</h2>
+            <p>Always write units with your numbers to keep track:</p>
+            <ul>
+                <li>Good: 5 km × (1000 m / 1 km) = 5000 m</li>
+                <li>Bad: 5 × 1000 = 5000 (units unclear!)</li>
+            </ul>
+
+            <h2>Tips for Unit Conversion</h2>
+            <ul>
+                <li>Always write units next to numbers</li>
+                <li>Use unity fractions (fractions equal to 1)</li>
+                <li>Set up conversion so unwanted units cancel</li>
+                <li>Check your answer makes sense (e.g., meters should be larger than centimeters)</li>
+                <li>Memorize common conversions for your field</li>
+                <li>Double-check decimal point placement</li>
+            </ul>
+
+            <h2>Common Conversion Factors</h2>
+            <ul>
+                <li>1 inch = 2.54 cm (exact)</li>
+                <li>1 mile = 1.609 km</li>
+                <li>1 pound = 0.454 kg</li>
+                <li>1 gallon = 3.785 L</li>
+                <li>1 acre = 43,560 square feet</li>
+            </ul>
+
+            <div class="mt-4">
+                <a href="calculator.html" class="btn btn-primary">Back to Calculator</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

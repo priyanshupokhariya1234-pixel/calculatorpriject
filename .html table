@@ -1,0 +1,11 @@
+<html>
+    <head>
+    </head>
+        <body>
+            <forms>
+                enter the name <input type="textbox"><br>
+                gender: male<inputtype="radio" name="priyanshu">   gender: female<inputtype="radio" name="priyanshu"> <br>
+                hobbies:sports<input type= "checkbox"> football<input type= "checkbox"><br>
+            </forms>
+        </body>
+    </html>

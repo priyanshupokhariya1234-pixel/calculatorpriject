@@ -1,0 +1,224 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Logarithms - Scientific Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        header {
+            background: radial-gradient(circle at top, #ffd166 0%, #ff9f1c 80%);
+            padding: 16px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.25);
+            color: #1f1f1f;
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .brand span {
+            display: inline-block;
+            background: #1f1f1f;
+            color: #fff;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 26px;
+            font-size: 14px;
+        }
+
+        header a {
+            font-weight: 500;
+            color: #1f1f1f !important;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: #0d3b66 !important;
+        }
+
+        .btn-dark {
+            background: #1f1f1f;
+            border: none;
+        }
+
+        .btn-dark:hover {
+            background: #0d3b66;
+        }
+
+       
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #fff9f2 0%, #f4f6fb 100%);
+            padding-bottom: 30px;
+        }
+
+        .content-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+            padding: 40px;
+            margin: 30px auto;
+            max-width: 900px;
+        }
+
+        .content-card h1,
+        .content-card h2 {
+            color: #0d3b66;
+            font-weight: 700;
+        }
+
+        .back-btn {
+            margin-top: 20px;
+        }
+
+        .formula {
+            background: #f7f9fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container d-flex flex-wrap gap-3 justify-content-between align-items-center">
+            <div class="brand">
+                <span>Σ</span>
+                <strong>Scientific Calculator</strong>
+            </div>
+            <nav class="d-flex align-items-center flex-wrap">
+                <a href="finalcalulator.html" class="text-decoration-none me-3">Home</a>
+                <a href="banda.html" class="text-decoration-none me-3">About</a>
+                <a href="finalcalulator.html#categories" class="text-decoration-none me-3">Categories</a>
+                <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <a href="finalcalulator.html" class="btn btn-outline-primary back-btn">← Back to Calculator</a>
+        <div class="content-card">
+            <h1>Logarithms</h1>
+            
+            <h2>Definition</h2>
+            <p>A logarithm is the inverse operation of exponentiation. It answers the question: "To what power must the base be raised to get a certain number?"</p>
+            <div class="formula">
+                If aˣ = b, then logₐ(b) = x<br>
+                Read as: "log base a of b equals x"
+            </div>
+
+            <h2>Understanding Logarithms</h2>
+            <p>Logarithms are the "opposite" of exponents:</p>
+            <ul>
+                <li>If 2³ = 8, then log₂(8) = 3</li>
+                <li>If 10² = 100, then log₁₀(100) = 2</li>
+                <li>If e¹ = e, then ln(e) = 1 (natural log)</li>
+            </ul>
+
+            <h2>Common Types</h2>
+            
+            <h3>Common Logarithm (Base 10)</h3>
+            <div class="formula">log₁₀(x) or simply log(x)</div>
+            <p>Used in scientific notation and many calculations.</p>
+
+            <h3>Natural Logarithm (Base e)</h3>
+            <div class="formula">logₑ(x) or ln(x)</div>
+            <p>Where e ≈ 2.71828. Used in calculus, physics, and growth models.</p>
+
+            <h3>Binary Logarithm (Base 2)</h3>
+            <div class="formula">log₂(x)</div>
+            <p>Used in computer science and information theory.</p>
+
+            <h2>Key Properties</h2>
+            
+            <h3>Product Rule</h3>
+            <div class="formula">log(xy) = log(x) + log(y)</div>
+            <p>Logarithm of a product equals sum of logarithms.</p>
+
+            <h3>Quotient Rule</h3>
+            <div class="formula">log(x/y) = log(x) - log(y)</div>
+            <p>Logarithm of a quotient equals difference of logarithms.</p>
+
+            <h3>Power Rule</h3>
+            <div class="formula">log(xⁿ) = n · log(x)</div>
+            <p>Logarithm of a power equals exponent times logarithm.</p>
+
+            <h3>Change of Base Formula</h3>
+            <div class="formula">logₐ(b) = log(b) / log(a) = ln(b) / ln(a)</div>
+            <p>Convert between different bases.</p>
+
+            <h3>Special Values</h3>
+            <ul>
+                <li>log(1) = 0 (any base)</li>
+                <li>logₐ(a) = 1</li>
+                <li>logₐ(aⁿ) = n</li>
+            </ul>
+
+            <h2>Applications</h2>
+            <ul>
+                <li><strong>Scientific Notation:</strong> Simplifying very large or small numbers</li>
+                <li><strong>Growth Models:</strong> Population growth, compound interest, radioactive decay</li>
+                <li><strong>Signal Processing:</strong> Decibels (dB) use logarithmic scales</li>
+                <li><strong>Computer Science:</strong> Algorithm complexity, binary search</li>
+                <li><strong>Chemistry:</strong> pH scale (pH = -log[H⁺])</li>
+            </ul>
+
+            <h2>Solving Logarithmic Equations</h2>
+            <p><strong>Example 1:</strong> Solve log₂(x) = 5</p>
+            <ul>
+                <li>Convert to exponential: x = 2⁵ = 32</li>
+            </ul>
+
+            <p><strong>Example 2:</strong> Solve log(x) + log(3) = log(12)</p>
+            <ul>
+                <li>Use product rule: log(3x) = log(12)</li>
+                <li>Since logs are equal: 3x = 12</li>
+                <li>Solution: x = 4</li>
+            </ul>
+
+            <h2>Graph Characteristics</h2>
+            <ul>
+                <li>Logarithmic functions are the inverse of exponential functions</li>
+                <li>Domain: (0, ∞) - only positive numbers</li>
+                <li>Range: (-∞, ∞) - all real numbers</li>
+                <li>Always passes through (1, 0)</li>
+                <li>Vertical asymptote at x = 0</li>
+                <li>Increases slowly (much slower than exponential growth)</li>
+            </ul>
+
+            <h2>Real-World Example: pH Scale</h2>
+            <p>The pH of a solution measures acidity:</p>
+            <div class="formula">pH = -log₁₀[H⁺]</div>
+            <p>Where [H⁺] is the hydrogen ion concentration.</p>
+            <ul>
+                <li>pH = 7: neutral (pure water)</li>
+                <li>pH < 7: acidic</li>
+                <li>pH > 7: basic</li>
+            </ul>
+
+            <h2>Key Tips</h2>
+            <ul>
+                <li>Remember: logarithms are only defined for positive numbers</li>
+                <li>Use properties to simplify complex logarithmic expressions</li>
+                <li>When solving equations, always check your answers (logs require positive arguments)</li>
+                <li>Natural logs (ln) are especially useful in calculus</li>
+                <li>Logarithmic scales make it easier to work with very large ranges of values</li>
+            </ul>
+
+            <div class="mt-4">
+                <a href="finalcalulator.html" class="btn btn-primary">Back to Calculator</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

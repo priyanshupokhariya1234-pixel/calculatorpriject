@@ -1,0 +1,48 @@
+header {
+    background: radial-gradient(circle at top, #ffd166 0%, #ff9f1c 80%);
+    padding: 16px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    color: #1f1f1f;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.brand span {
+    display: inline-block;
+    background: #1f1f1f;
+    color: #fff;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+}
+
+header a {
+    font-weight: 500;
+    color: #1f1f1f !important;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #0d3b66 !important;
+}
+
+.btn-dark {
+    background: #1f1f1f;
+    border: none;
+}
+
+.btn-dark:hover {
+    background: #0d3b66;
+}
